@@ -1,0 +1,84 @@
+
+// 박스 꾸미기
+@mixin box($w: 200px ,$h: 200px, $bdz: 1px){
+  width: $w;
+  height: $h;
+  border: $bdz solid #333;
+  margin-bottom: 30px;
+}
+
+// 클리어 믹스인
+@mixin clear(){
+  &::after{
+    display: block;
+    content: '';
+    clear: both;
+  }
+}
+
+// 블록요소 중앙 정렬
+@mixin box-center($w, $h, $fz, $ff){
+  width: $w;
+  height: $h;
+  font: bold #{$fz}/#{$h} $ff;
+  text-align: center;
+  border: 1px solid #000;
+  position: absolute; left: 50%; top: 50%;
+
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+// 플렉스 믹스인
+@mixin flex($isDirection:true,$isHorizontalAlign:'start',$isVerticalAlign:'start',$gap: 0){
+  display: flex;
+  
+  // 1. 아이템 방향
+  @if $isDirection == true {
+    flex-direction: row;
+  } @else {
+    flex-direction: column;
+  }
+  
+  // 2. 아이템 수평 정렬
+  @if $isHorizontalAlign == 'start' {
+    justify-content: flex-start;
+  } @else if $isHorizontalAlign == 'center'{
+    justify-content: center;
+  } @else if $isHorizontalAlign == 'end' {
+    justify-content: flex-end;
+  } @else if $isHorizontalAlign == 'between'{
+    justify-content: space-between;
+  } @else {
+    justify-content: flex-start;
+  }
+  
+  // 3. 아이템 수직 정렬
+  @if $isVerticalAlign == 'start' {
+    align-items: flex-start;
+  } @else if $isVerticalAlign == 'center'{
+    align-items: center;
+  } @else if $isVerticalAlign == 'end' {
+    align-items: flex-end;
+  } @else {
+    align-items: flex-start;
+  }
+  
+  // 4. 아이템 여백
+  gap: $gap;
+};
+
+// 버튼 꾸미기 믹스인
+@mixin btn($w,$h,$c,$fz,$ff,$bgc){
+  display: inline-block;
+  width: $w;
+  height: $h;
+  font: bold #{$fz}/#{$h} $ff;
+  text-align: center;
+  color: $c;
+  text-decoration: none;
+  background-color: $bgc;
+  border: 1px solid #000;
+}

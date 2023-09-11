@@ -1,0 +1,84 @@
+#main{
+  width: 100%;
+  height: auto;
+
+  .section1{
+    width: 100vw;
+    height: 100vh;
+
+
+
+
+    .mainviewBox{
+      width: 100%;
+      height: 100%;
+      float: left;
+      position: absolute; left: 0; top: 0;
+      opacity: 0;
+
+
+
+
+      &:nth-child(1){
+        opacity: 1;
+        -webkit-transition: all ease 1.4s;
+        -moz-transition: all ease 1.4s;
+        -o-transition: all ease 1.4s;
+        transition: all ease 1.4s;
+      }
+
+      .img{
+        width: 100%;
+        height: 100%;
+      }
+
+      .mainviewText{
+        position: absolute; bottom: 30%; left: 5%;
+        font-size: 3rem;
+        font-weight: bold;
+        
+
+        .span{
+          display: block;
+          font-size: 1.5rem;
+          font-weight: normal;
+        }
+      }
+
+    }
+
+    .mainNav{
+      width: 80%;
+      height: 3px;
+      background-color: rgba(255,255,255, 0.5);
+      position: absolute;
+      left: 50%; bottom: 10%;
+      transform: translateX(-50%);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .current{
+        width: 10%;
+        height: 5px;
+        background-color: #fff;
+        position: absolute;left: 0;
+      }
+
+      .arrow{
+        width: fit-content;
+        height: auto;
+        cursor: pointer;
+      }
+
+      .prev{margin-left: -5%;}
+      .next{margin-right: -5%;}
+    }
+  }
+
+  .section2{}
+
+  .section3{}
+
+}
