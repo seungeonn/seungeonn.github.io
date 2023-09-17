@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './sotre'
+import { Styled } from 'styled-components/dist/constructors/constructWithOptions';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

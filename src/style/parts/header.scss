@@ -29,14 +29,18 @@
     height: auto;
 
     .link{
-      font-size: 2rem;
+      font-size: 1.7rem;
       margin:0  40px;
+      font-weight: 500;
+      &:hover{
+        color: #D30155;
+      }
     }
   }
 
   .search{
     margin-left: auto;
-    font-size: 1.7rem;
+    font-size: 2rem;
     cursor: pointer;
   }
 

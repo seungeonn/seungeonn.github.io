@@ -1,7 +1,8 @@
 @import url('./style/partials/_reset.scss');
 @import url('./style/parts/header.scss');
 @import url('./style/parts/footer.scss');
-@import url('./style/parts/main.scss');
+@import url('./style/parts/main/section1.scss');
+// @import url('./style/parts/main/section2.scss');
 
 body{
   overflow-x: hidden;
