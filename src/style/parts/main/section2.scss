@@ -1,0 +1,52 @@
+.section2{
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background:#FBF3EB;
+;
+
+  .box{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    .image{
+      width: 100%;
+      .img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text{
+      .name{
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .price{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .btnBox{
+    width: 100%;
+    text-align: center;
+
+    .more{
+      display: inline-block;
+      padding: 10px 20px ;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      background: #272727;
+      color: #fff;
+      border-radius: 10px;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+  }
+}

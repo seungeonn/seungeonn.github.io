@@ -65,8 +65,8 @@ function Section1 () {
   },[mainNum, mainview.length])
 
   return(
-    <div id="main">
 
+    <>
       <section className="section1">
         
         {
@@ -97,16 +97,8 @@ function Section1 () {
         </div>
 
       </section>
+    </>
 
-      <section className="section2">
-
-      </section>
-      
-      <section className="section3">
-
-      </section>
-
-    </div>
   )
 }
 

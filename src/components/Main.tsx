@@ -3,10 +3,10 @@ import { Section2 } from "./Main/Section2";
 
 function Main(){
   return(
-    <>
-    <Section1></Section1>
-    <Section2></Section2>
-    </>
+    <div id="main">
+      <Section1></Section1>
+      <Section2></Section2>
+    </div>
   )
   
 }
